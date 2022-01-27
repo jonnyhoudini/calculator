@@ -3,35 +3,60 @@
   <head>
     <meta charset="utf-8">
     <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+
   </head>
   <body>
 
-<div class="display">
-  00000000
+<div class="container">
+
+  <div class="display">
+
+  </div>
+
+  <div class="buttons">
+
+    <!-- <div class="button number" onclick="display.innerHTML += 1">1</div>
+    <div class="button number" onclick="display.innerHTML += 2">2</div>
+    <div class="button number" onclick="display.innerHTML += 3">3</div>
+    <div class="button number" onclick="display.innerHTML += 4">4</div>
+    <div class="button number" onclick="display.innerHTML += 5">5</div>
+    <div class="button number" onclick="display.innerHTML += 6">6</div>
+    <div class="button number" onclick="display.innerHTML += 7">7</div>
+    <div class="button number" onclick="display.innerHTML += 8">8</div>
+    <div class="button number" onclick="display.innerHTML += 9">9</div>
+    <div class="button number" onclick="display.innerHTML += 0">0</div> -->
+
+    <div class="button number" id="1">1</div>
+    <div class="button number" id="2">2</div>
+    <div class="button number" id="3">3</div>
+    <div class="button number" id="4">4</div>
+    <div class="button number" id="5">5</div>
+    <div class="button number" id="6">6</div>
+    <div class="button number" id="7">7</div>
+    <div class="button number" id="8">8</div>
+    <div class="button number" id="9">9</div>
+    <div class="button number" id="0">0</div>
+    <div class="button operator plus" id="+">+</div>
+    <div class="button operator subtract" id="-">-</div>
+    <div class="button operator times" id="*">&times</div>
+    <div class="button operator" id="/">&divide</div>
+    <div class="button clear" id="clear">C</div>
+    <div class="button equals" id="equals">=</div>
+
+
+
+  </div>
+
 </div>
 
-<div class="buttons">
-
-  <div class="button">1</div>
-  <div class="button">2</div>
-  <div class="button">3</div>
-  <div class="button">4</div>
-  <div class="button">5</div>
-  <div class="button">6</div>
-  <div class="button">7</div>
-  <div class="button">8</div>
-  <div class="button">9</div>
-  <div class="button">0</div>
-  <div class="button">+</div>
-  <div class="button">-</div>
-  <div class="button">*</div>
-  <div class="button">/</div>
-  <div class="button">C</div>
-  <div class="button">=</div>
 
 
-
-</div>
-
+<script src="script.js" charset="utf-8"></script>
   </body>
 </html>

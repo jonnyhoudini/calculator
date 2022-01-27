@@ -1,0 +1,100 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #8B1E3F;
+  font-family: 'Outfit', sans-serif;
+}
+
+.container {
+  background-color: #3C153B;
+  gap: 3px 3px;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+}
+
+.display {
+  background-color: #F0C987;
+  width: 100%;
+  border-radius: 5px;
+  color: #3C153B;
+  font-size: 5rem;
+  height: 80px;
+  text-align: right;
+  padding-left: 10px;
+  padding-right: 20px;
+  border: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.button {
+  height: 60px;
+  border-radius: 3px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover {
+  background-color: white;
+}
+
+.number {
+  background-color: #89BD9E;
+}
+
+.operator {
+  background-color: #DB4C40;
+}
+
+.clear {
+  background-color: #8B1E3F;
+}
+
+.equals {
+  background-color: #8B1E3F;
+}
+
+.plus {
+  grid-area: 1/4;
+}
+
+.subtract {
+  grid-area: 2/4;
+}
+
+.times {
+  grid-area: 3/4;
+}
+
+.divide {
+  grid-area: 4/4;
+}
+
+#clear {
+  grid-area: 4/1;
+}
+
+#equals {
+  grid-area: 4/3;
+}
