@@ -64,7 +64,13 @@ function saveValues() {
 } else {
   numbers[0] = calculate();
   sign.first = this.id;
+  console.log(numbers[0]);
   display.innerHTML = "";
+
+  // This is where I want to display the intermediate result
+  // How do I make the display clear when the next number is pressed?
+
+  
 };
 }
 
@@ -81,7 +87,8 @@ function clearScreen() {
 const equals = document.querySelector('.equals');
 
 equals.addEventListener("click", function() {
-  let result = calculate();
+  let n = calculate();
+  let result = parseFloat(n.toFixed(7));
   display.innerHTML = result;
 });
 
